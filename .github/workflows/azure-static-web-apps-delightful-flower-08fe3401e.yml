@@ -30,7 +30,7 @@ jobs:
           ###### Configuración del proyecto ######
           app_location: "/"       # carpeta del proyecto
           api_location: ""        # APIs (si no usas, dejar vacío)
-          output_location: "dist" # carpeta donde se generan los archivos compilados
+          output_location: "build" # carpeta donde se generan los archivos compilados
           ########################################
 
   close_pull_request_job:
@@ -44,3 +44,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_DELIGHTFUL_FLOWER_08FE3401E }}
           action: "close"
+
