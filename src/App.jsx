@@ -167,9 +167,9 @@ function App() {
         message: currentInput,
         session_id: SESSION_ID 
     };
-    
+    const API_URL = "https://adgenie-enducngjbdbqhze5.westus2-01.azurewebsites.net/chat/message";
     try {
-      const response = await fetch('http://localhost:8000/chat/message', { 
+      const response = await fetch(API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
